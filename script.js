@@ -5,7 +5,7 @@ const menu = [
         title: 'rosted meat',
         category: 'breakfast',
         price: 20,
-        img: "/img/img.jpg",
+        img: "img/img.jpg",
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
@@ -14,7 +14,7 @@ const menu = [
         title: 'pork',
         category: 'breakfast',
         price: 20,
-        img: "/img/img10.jpg",
+        img: "img/img10.jpg",
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
@@ -23,7 +23,7 @@ const menu = [
         title: 'chicken and chipes',
         category: 'lunch',
         price: 100,
-        img: "/img/img7.jpg",
+        img: "img/img7.jpg",
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
@@ -32,7 +32,7 @@ const menu = [
         title: 'chicken salad',
         category: 'breakfast',
         price: 50,
-        img: "/img/img1.jpg",
+        img: "img/img1.jpg",
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
@@ -41,7 +41,7 @@ const menu = [
         title: 'pancake',
         category: 'dinner',
         price: 80,
-        img: "/img/img2.jpg",
+        img: "img/img2.jpg",
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
@@ -50,7 +50,7 @@ const menu = [
         title: 'dinner',
         category: '',
         price: 50,
-        img: "/img/img3.jpg",
+        img: "img/img3.jpg",
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
@@ -60,7 +60,7 @@ const menu = [
         title: 'Rosted Pork',
         category: 'breakfast',
         price: 45.99,
-        img: "/img/img4.jpg",
+        img: "img/img4.jpg",
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
@@ -69,7 +69,7 @@ const menu = [
         title: 'Cake',
         category: 'lunch',
         price: 10,
-        img: "/img/img5.jpg",
+        img: "img/img5.jpg",
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
@@ -79,7 +79,7 @@ const menu = [
         title: 'hot dog',
         category: 'dinner',
         price: 15.67,
-        img: "/img/img11.jpg",
+        img: "img/img11.jpg",
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
@@ -88,7 +88,7 @@ const menu = [
         title: 'Vegetable',
         category: 'breakfast',
         price: 30,
-        img: "/img/img8.jpg",
+        img: "img/img8.jpg",
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
