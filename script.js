@@ -1,3 +1,4 @@
+// object that store all my data
 const menu = [
     {
         id: 1,
@@ -72,7 +73,7 @@ const menu = [
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
-    
+
     {
         id: 8,
         title: 'hot dog',
@@ -91,18 +92,41 @@ const menu = [
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis accusantium accusamus cumque
         quae quidem quia, ratione officiis soluta quo.`
     },
-    
-    
+
+
 ];
 
+// selecting element from my Html
 const sectionCenter = document.querySelector('.section-center');
+const filterBtns = document.querySelectorAll('.filter-btn')
 
-window.addEventListener('DOMContentLoaded', function(){
-   displayMenuItems(menu)
+// Load item when window load
+window.addEventListener('DOMContentLoaded', function () {
+    displayMenuItems(menu)
 })
 
-function displayMenuItems(menuItems){
-    let displayMenu = menuItems.map(function(item){
+// loop through all the fiter-btn
+filterBtns.forEach(function (btn) {
+    // when a specific button is click run the function.
+    btn.addEventListener('click', function (e) {
+        const category = e.currentTarget.dataset.id;
+        const menuCategory = menu.filter(function (menuItems) {
+            if (menuItems.category === category) {
+                return menuItems;
+            }
+        })
+        if (category === "all") {
+            displayMenuItems(menu)
+        } else {
+            displayMenuItems(menuCategory)
+        }
+    })
+})
+
+
+// Function that display items
+function displayMenuItems(menuItems) {
+    let displayMenu = menuItems.map(function (item) {
         return ` <article class="menu-item">
         <div class="img">
             <img src=${item.img} alt=${item.title} class="photo">
@@ -116,6 +140,8 @@ function displayMenuItems(menuItems){
         </div>
     </article>`
     })
+    // Use 'join' method to remove comma from the displayMenu string
     displayMenu = displayMenu.join("")
+    // Using DOM to manipulate our js code
     sectionCenter.innerHTML = displayMenu;
 }
